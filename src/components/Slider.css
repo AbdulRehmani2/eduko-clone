@@ -2,16 +2,42 @@
     list-style: none;
     display: flex;
     flex-direction: row;
+    padding: 0;
 }
 
 .slider-controls>li{
     height: 0.7rem;
     width: 0.7rem;
     border-radius: 50%;
-    background-color: red;
-    margin: 0rem 0.3rem;
+    background-color: grey;
+    margin: 0rem 0.2rem;
+}
+
+.slider-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 4rem 0rem;
+    color: white;
+    transition: all 0.8s;
 }
 
 .slider-controls>li:hover{
+    cursor: pointer;
+}
+
+.slide-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider-buttons{
+    background-color: transparent;
+    border: none;
+    margin: 0rem 5rem;
+}
+
+.slider-buttons:hover{
     cursor: pointer;
 }
