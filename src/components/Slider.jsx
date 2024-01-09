@@ -1,8 +1,8 @@
 import { useState } from "react"
 import './Slider.css'
 import slide1 from '../assets/slide1.png'
-import slide2 from '../assets/slide2.png'
-import slide3 from '../assets/slide3.png'
+import slide3 from '../assets/slide2.png'
+import slide2 from '../assets/slide3.png'
 
 
 export default function Slider()

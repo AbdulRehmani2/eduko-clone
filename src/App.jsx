@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Slider from './components/Slider'
 import Cards from './components/Cards'
+import Footer from './components/Footer'
 import './App.css'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Navbar></Navbar>
       <Slider></Slider>
       <Cards></Cards>
+      <Footer></Footer>
     </div>
   )
 }

@@ -1,0 +1,33 @@
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: white;
+    background-color: #3F51B5;
+    padding-top: 1rem;
+}
+
+.footer-container>button{
+    padding: 0.7rem 2rem;
+    color: white;
+    background-color: #3F51B5;
+    border: 2px solid white;
+    margin: 1rem 0rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer-container>button>ion-icon{
+    margin-left: 0.3rem;
+}
+
+.footer-container>div>ion-icon{
+    margin: 1rem 0.4rem;
+}
+.footer-text-div{
+    background-color: rgb(0,0,0,.2);
+    width: 100%;
+    text-align: center;
+
+}
