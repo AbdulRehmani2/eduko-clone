@@ -1,7 +1,18 @@
 .cards-container{
-    width: 100%;
     display: flex;
     align-items: center;
+    padding: 0rem 25rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-container{
+    box-shadow: 2px 2px 5px rgb(203, 203, 203), 2px -2px 5px rgb(203, 203, 203), -2px 2px 5px rgb(203, 203, 203), -2px -2px 5px rgb(203, 203, 203);
+    margin: 1rem;
+    border-radius: 5px;
+    width: 350px;
+    height: 500px;
 }
 
 .card-container>img{
@@ -13,5 +24,37 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+}
+
+.card-text-container>h3{
+    margin: 0.5rem auto;
+    font-size: 1.5rem;
+}
+
+.card-text-container>h4{
+    margin: 0.2rem auto;
+}
+
+.card-text-container>p{
+    font-size: 0.8rem;
+    height: 3rem;
+    width: 13rem;
+}
+
+.card-text-container>button{
+    box-shadow: 1px 1px 5px rgb(203, 203, 203), 1px -1px 5px rgb(203, 203, 203), -1px 1px 5px rgb(203, 203, 203), -1px -1px 5px rgb(203, 203, 203);
+    padding: 0.7rem 1.6rem;
+    border: 0;
+    text-transform: capitalize;
+    font-size: 0.6rem;
+    margin-top: 0.5rem;
+    transition: box-shadow 0.5s;
+}
+
+.card-text-container>button:hover{
+    box-shadow: 4px 4px 5px rgb(203, 203, 203), 4px -4px 5px rgb(203, 203, 203), -4px 4px 5px rgb(203, 203, 203), -4px -4px 5px rgb(203, 203, 203);
+    cursor: pointer;
 }
 
