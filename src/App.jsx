@@ -1,6 +1,6 @@
-import { useState } from 'react'
 import Navbar from './components/Navbar'
 import Slider from './components/Slider'
+import Cards from './components/Cards'
 import './App.css'
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
     <div className='main-container'>
       <Navbar></Navbar>
       <Slider></Slider>
+      <Cards></Cards>
     </div>
   )
 }
