@@ -1,0 +1,21 @@
+.submit-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 30rem;
+    padding: 0rem 2rem;
+}
+
+.submit-section>a{
+    font-weight: bold;
+}
+
+.submit-section>button{
+    padding: 1rem 2rem;
+    background-color: #3F51B5;
+    color: white;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+}

@@ -17,17 +17,6 @@
     box-shadow: 1px 1px 5px rgb(203, 203, 203), 1px -1px 5px rgb(203, 203, 203), -1px 1px 5px rgb(203, 203, 203), -1px -1px 5px rgb(203, 203, 203);
 }
 
-.register-container a{
-    color: #3F51B5;
-    cursor: pointer;
-}
-
-.register-title-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .register-data-section{
     display: flex;
     flex-direction: column;
@@ -56,26 +45,4 @@
 .register-data-input-section>input{
     width: 13.3rem;
     margin: 1rem 1rem;
-}
-
-.register-submit-section{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 30rem;
-    padding: 0rem 2rem;
-}
-
-.register-submit-section>a{
-    font-weight: bold;
-}
-
-.register-submit-section>button{
-    padding: 1rem 2rem;
-    background-color: #3F51B5;
-    color: white;
-    border-radius: 2px;
-    border: none;
-    cursor: pointer;
 }
