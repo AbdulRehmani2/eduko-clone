@@ -22,18 +22,6 @@
     cursor: pointer;
 }
 
-.login-title{
-    color: #3F51B5;
-    font-size: 2rem;
-    font-weight: bolder;
-}
-
-.login-title-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .login-data-section{
     display: flex;
     flex-direction: column;
@@ -51,26 +39,4 @@
 
 .login-data-section>p{
     padding: 1rem;
-}
-
-.login-submit-section{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 20rem;
-    padding: 0rem 3rem;
-}
-
-.login-submit-section>a{
-    font-weight: bold;
-}
-
-.login-submit-section>button{
-    padding: 1rem 2rem;
-    background-color: #3F51B5;
-    color: white;
-    border-radius: 2px;
-    border: none;
-    cursor: pointer;
 }

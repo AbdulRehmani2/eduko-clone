@@ -1,12 +1,13 @@
 import Register from '../components/Register'
 import TitleSection from '../components/TitleSection'
 import SubmitSection from '../components/SubmitSection'
+import '../components/Register.css'
 
 export default function RegisterPage(){
     let data = {
         path: '/login',
         text: 'Sign In Instead',
-        button: 'Register'
+        button: 'REGISTER'
     }
     return (
         <div className='register-container'>

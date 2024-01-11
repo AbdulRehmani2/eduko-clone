@@ -8,12 +8,10 @@ export default function TitleSection(props){
         alignItems: 'center'
     }
     return(
-    <div className='title-section-container' style = {css}>
-        <div className='register-title-section'>
+        <div className='register-title-section' style={css}>
             <Link to={'/'} className='login-title'>EDUKO</Link>
             <h3>{props.text}</h3>
         </div>
-    </div>
     )
     
 }
