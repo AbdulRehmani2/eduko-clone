@@ -21,7 +21,7 @@ export default function Register(){
                     </div>
                 </div>
                 <div className='register-submit-section'>
-                    <Link to={'/register'}>Sign In Instead</Link>
+                    <Link to={'/login'}>Sign In Instead</Link>
                     <button>REGISTER</button>
                 </div>
             </div>
