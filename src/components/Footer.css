@@ -18,16 +18,20 @@
     align-items: center;
 }
 
+.footer-container>button:hover{
+    cursor: pointer;
+}
+
 .footer-container>button>ion-icon{
     margin-left: 0.3rem;
 }
 
 .footer-container>div>ion-icon{
+    cursor: pointer;
     margin: 1rem 0.4rem;
 }
 .footer-text-div{
     background-color: rgb(0,0,0,.2);
     width: 100%;
     text-align: center;
-
 }

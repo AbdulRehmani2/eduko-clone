@@ -1,17 +1,24 @@
 import Navbar from './components/Navbar'
-import Slider from './components/Slider'
-import Cards from './components/Cards'
-import Footer from './components/Footer'
+import HomePage from './pages/HomePage'
+import LoginPage from './pages/LoginPage'
+import RegisterPage from './pages/RegisterPage'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
 import './App.css'
 
 function App() {
 
   return (
     <div className='main-container'>
-      <Navbar></Navbar>
-      <Slider></Slider>
-      <Cards></Cards>
-      <Footer></Footer>
+      <Router>
+        <Navbar></Navbar>
+        <Routes>
+          <Route path='/' element={<HomePage></HomePage>}></Route>
+          <Route path='/login' element={<LoginPage></LoginPage>}></Route>
+          <Route path='/register' element={<RegisterPage></RegisterPage>}></Route>
+        </Routes>
+      </Router>
+      
     </div>
   )
 }
