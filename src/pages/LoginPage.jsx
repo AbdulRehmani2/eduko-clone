@@ -1,4 +1,3 @@
-import Login from '../components/Login'
 import SubmitSection from '../components/SubmitSection'
 import TitleSection from '../components/TitleSection'
 import '../components/Login.css'

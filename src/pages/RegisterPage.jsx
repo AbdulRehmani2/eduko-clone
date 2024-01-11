@@ -1,4 +1,3 @@
-import Register from '../components/Register'
 import TitleSection from '../components/TitleSection'
 import SubmitSection from '../components/SubmitSection'
 import '../components/Register.css'
