@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import './Slider.css'
 import slide1 from '../assets/slide1.png'
 import slide3 from '../assets/slide2.png'
@@ -8,19 +8,25 @@ import slide2 from '../assets/slide3.png'
 export default function Slider()
 {
     const [index, setIndex] = useState(0)
+
     function nextPage(){
-        index < 2 ? setIndex(index+1) : setIndex(0)
+        setIndex((index + 1) % data.length)
     }
     
     function prevPage(){
-        index > 0 ? setIndex(index-1) : setIndex(2)
+        setIndex(index != 0 ? index - 1 : data.length - 1);
     }
+
+    useEffect(() => {
+        const interval = setInterval(nextPage, 5000);
+        return () => clearInterval(interval);
+    }, [index])
 
     let data = [{title:"Available on Every Device", firstLine: 'Eduko is available on Mobile and Desktop Devices', secondLine:'The most advanced system to make the course presence on the Web and Mobile devices.', image:slide1, index:0},
                 {title:'Online Assignment Submission', firstLine:'Forget the paper work', secondLine:'The integrated API helps the students to manage their assignments online', image:slide2, index:1},
                 {title:'Best Platform to Manage the Course', firstLine:'Manage your classes with online presence', secondLine:'Create your own course and make it more productive', image:slide3, index:2}]
     return (
-        <div className="slider-container" style={{backgroundImage: `url(${data[index].image})`, backgroundSize:'cover', backgroundRepeat:'no-repeat'}}>
+        <div className="slider-container" style={{backgroundImage: `url(${data[index].image})`, backgroundSize:'cover', backgroundRepeat:'no-repeat', backgroundColor:'#3F51B5'}}>
             <button className="slider-buttons" onClick={prevPage}>&lt;</button>
             <Slide data={data[index]}></Slide>
             <button className="slider-buttons" onClick={nextPage}>&gt;</button>
@@ -49,4 +55,3 @@ export default function Slider()
         </>)
     }
 }
-
